@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de Moneda</title>
+</head>
+<body>
+
+    <form action="/ex2/conversor.php" method="GET">
+        <label for="cantidad">Cantidad a convertir:</label><br>
+        <input type="number" id="cantidad" name="cantidad" step="0.01" required><br><br>
+        
+        <label>Tipo de Conversion:</label><br>
+        <input type="radio" id="euroAdolar" name="tipo" value="euroAdolar" required>
+        <label for="euroAdolar">Euros a Dolares</label><br>
+        <input type="radio" id="dolarAeuro" name="tipo" value="dolarAeuro">
+        <label for="dolarAeuro">Dolares a Euros</label><br><br>
+        
+        <input type="submit" value="Convertir">
+    </form>
+
+</body>
+</html>

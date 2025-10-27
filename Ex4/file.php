@@ -1,25 +1,36 @@
 <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["music"])) {
-    $choice = $_POST["music"];
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    $choice = $_GET["music"];
    
     switch ($choice) {
         case "rock":
-            $message = "Rock on! 🎸 You’ve got great energy!";
+            $message = "¡Rock and roll! ¡Tienes una energía increíble!";
             break;
         case "pop":
-            $message = "You love the hits! 🎤 Always trendy and upbeat!";
+            $message = "¡Te encantan los éxitos! ¡Siempre a la moda y con buen ritmo!";
             break;
         case "jazz":
-            $message = "Smooth choice 🎷 You’ve got refined taste.";
+            $message = "Elección sofisticada Tienes un gusto refinado.";
             break;
         case "classical":
-            $message = "Elegant! 🎻 You appreciate timeless beauty.";
+            $message = "¡Elegante! Aprecias la belleza atemporal.";
             break;
         default:
-            $message = "Interesting taste!";
+            $message = "¡Qué gusto tan interesante!";
     }
 } else {
-    $message = "Please select a music genre first.";
+    $message = "Por favor, selecciona un género musical primero.";
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="es">
+<body>
+
+<h1><?php echo $message; ?></h1>
+
+<a href="music.html">Volver</a>
+
+</body>
+</html>
