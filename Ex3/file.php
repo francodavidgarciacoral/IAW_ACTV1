@@ -2,10 +2,9 @@
 
 date_default_timezone_set('UTC');
 $hour = date('G');
-$current_time = date('h:i:s A'); // hour:minute:second uppercase "AM/PM"
+$current_time = date('h:i:s A'); 
 $greeting = "this is a greeting";
 
-//greeting
 if ($hour >= 5 && $hour <14) {
     $greeting = "Bon dia!";
 } elseif ($hour >= 14 && $hour <19) {
@@ -14,7 +13,6 @@ if ($hour >= 5 && $hour <14) {
     $greeting = "Bona nit!";
 }
 
-//output
 echo "<h2>$greeting</h2>";
 echo "<p>$current_time</p>";
 
