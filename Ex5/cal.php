@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 <div class="result">
     <h2>Result</h2>
     <p><?php echo $message; ?></p>
-    <a href="taxcalc.html">Go back</a>
+    <a href="index5.html">Go back</a>
 </div>
 
 </body>

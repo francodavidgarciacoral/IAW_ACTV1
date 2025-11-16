@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
 <h1><?php echo $message; ?></h1>
 
-<a href="music.html">Volver</a>
+<a href="index4.html">Volver</a>
 
 </body>
 </html>
