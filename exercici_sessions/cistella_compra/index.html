@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Botiga</title>
+</head>
+<body>
+    <h1>Botiga de productes</h1>
+
+    <h2>Producte 1: Vi Les Terrasses – 39 €</h2>
+    <form action="cistella_compra.php" method="POST">
+        <input type="hidden" name="producte" value="terrasses">
+        Quantitat: <input type="number" name="quantitat" min="1" required>
+        <button type="submit">Afegir a la cistella</button>
+    </form>
+
+    <h2>Producte 2: Vi Blanc Premium – 25 €</h2>
+    <form action="cistella_compra.php" method="POST">
+        <input type="hidden" name="producte" value="blanc">
+        Quantitat: <input type="number" name="quantitat" min="1" required>
+        <button type="submit">Afegir a la cistella</button>
+    </form>
+
+    <br>
+    <a href="finalitzar.php"><button>Finalitzar compra</button></a>
+
+</body>
+</html>
