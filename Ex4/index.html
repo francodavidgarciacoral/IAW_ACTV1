@@ -1,42 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Favorite Music Survey</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
-            text-align: center;
-            padding: 50px;
-        }
-        form {
-            background: white;
-            display: inline-block;
-            padding: 20px 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 { color: #333; }
-        input[type="submit"] {
-            margin-top: 15px;
-            padding: 8px 15px;
-            background: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background: #0056b3;
-        }
-    </style>
-</head>
+
 <body>
 
 <h1>What kind of music do you like the most?</h1>
 
-<form method="post" action="music.php">
+<form action="music.php" method="GET">
     <label><input type="radio" name="music" value="rock"> Rock</label><br>
     <label><input type="radio" name="music" value="pop"> Pop</label><br>
     <label><input type="radio" name="music" value="jazz"> Jazz</label><br>
